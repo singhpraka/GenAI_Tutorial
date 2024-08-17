@@ -31,7 +31,7 @@ def query_faq_db():
 
 def query_email_template():
     logging.info(f"Vector DB: Loading template vector database")
-    temp_vec_db = utils.load_db(config['faiss_indexstore']['vec_db_path'],"email_template_Samsung")
+    temp_vec_db = utils.load_db(config['faiss_indexstore']['vec_db_path'],"email_template")
     user_query = config['user_template_query']
     #selected_qry = random.choice(user_query)
     selected_qry = user_query[-1]
